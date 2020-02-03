@@ -7,4 +7,4 @@ Run `npm start`
 
 ## Usage
 
-[example]: https://github.com/bakesaled/potato/demo
+[Example](https://github.com/bakesaled/potato/tree/master/demo)
