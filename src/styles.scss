@@ -1,0 +1,75 @@
+$appbar-height: 48px;
+body {
+  margin: 0;
+  padding: 0;
+}
+potato-header {
+  overflow: hidden;
+  background: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: $appbar-height;
+  z-index: 2;
+}
+
+potato-content {
+  position: absolute;
+  top: $appbar-height;
+  width: 100%;
+  display: block;
+  potato-content-child {
+    display: block;
+    margin: 20px;
+  }
+}
+
+potato-menu-bar {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    li {
+      float: left;
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      &:hover {
+        background: #555;
+      }
+    }
+  }
+}
+
+potato-app-bar {
+  margin-right: 16px;
+  font-size: 0.9em;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    li {
+      float: left;
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 2px 3px;
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
